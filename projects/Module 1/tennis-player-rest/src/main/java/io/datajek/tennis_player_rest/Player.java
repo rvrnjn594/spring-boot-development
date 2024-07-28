@@ -19,24 +19,44 @@ public class Player {
 
     @JsonFormat(pattern = "dd-MM-yyy")
     private Date birthDate;
-
     private int titles;
-
     public Player () {}
-
     public Player(String name, String nationality, Date birthDate, int titles) {
         super();
         this.name = name;
         this.nationality = nationality;
         this.birthDate = birthDate;
-        this.title = titles;
+        this.titles = titles;
     }
-
     public int getId() {
+        return id;
+    }
+    public void setId(int id) {
         this.id = id;
     }
-
     public String getName() {
         return name;
+    }
+    public String getNationality() {
+        return nationality;
+    }
+    public void setNationality(String nationality) {
+        this.nationality = nationality;
+    }
+    public Date getBirthDate() {
+        return birthDate;
+    }
+    public void setBirthDate(Date birthDate) {
+        this.birthDate = birthDate;
+    }
+    public int getTitles() {
+        return titles;
+    }
+    public void setTitles(int titles) {
+        this.titles = titles;
+    }
+    @Override
+    public String toString() {
+        return "\nPlayer [id= " + id + ", name= " + name + ", nationality= " + nationality + ", birthDate= " + birthDate + ", title= " + titles + "]";
     }
 }

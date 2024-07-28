@@ -143,16 +143,16 @@ To use the PlayerRepository in the service layer, we will autowire it and then d
         @Service
         public class PlayerService {
 
-        @Autowired
-        private PlayerRepository repo;
+           @Autowired
+            private PlayerRepository repo;
 
-        //method to return all players
+            //method to return all players
 
-        //method to find player by id
+            //method to find player by id
 
-        //method to add player
+            //method to add player
 
-        //...
+            //...
         }
 
 [See the code here](../../projects/Module%201/tennis-player-rest)
