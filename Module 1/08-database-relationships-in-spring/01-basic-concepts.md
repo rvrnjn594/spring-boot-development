@@ -45,6 +45,7 @@ When one row in table_a corresponds to one row in table_b, then it is called a o
 When one row in table_a corresponds to many rows in table_b, then it is called a one-to-many relationship.  
  The inverse of a one-to-many relationship is a many-to-one relationship where many rows in table_b corresponds to one row in table_a.  
  For example, a player can register for many tournaments. There is one-to-many relationship between the player table and the resigtration table.
+
 ![one-to-many](./images/1-3-one-to-many-realationship.pngs)
 
 #### Many to Many relationship
